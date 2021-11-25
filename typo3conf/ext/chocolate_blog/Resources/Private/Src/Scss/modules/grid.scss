@@ -1,0 +1,50 @@
+
+@import '../variables.scss';
+@import './breakpoints.scss';
+
+
+.grid {
+    display: grid;
+    .grid-item {
+        height: 400px;
+        background-color: rgb(221, 156, 221);
+    }
+}
+
+.grid-standard {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: $margin-regular;
+}
+
+.group-list {
+    display: flex;
+    flex-direction: column;
+    .grid-group-layout {
+        grid-template-columns:  1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        margin-bottom: $margin-regular;
+        grid-gap: $margin-regular;
+    }
+
+    @include lg {
+        .grid-group-layout {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+        }
+        .grid-group-layout:nth-child(odd)  {
+            .grid-item:first-of-type {
+                grid-column: 1/2;
+                grid-row: 1/3;
+                height: 100%;
+            }
+        }
+        .grid-group-layout:nth-child(even) {
+            .grid-item:last-of-type {
+                grid-column: 2/2;
+                grid-row: 1/3;
+                height: 100%;
+            }
+        }
+    }
+}
+
