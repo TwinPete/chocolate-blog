@@ -34,6 +34,6 @@ $breakpoints: (
 $header-height: 10rem;
 $footer-height: 10rem;
 
-$content-min-height: calc(100vh - ($header-height + $footer-height));
+$content-min-height: calc(100vh - (#{$header-height} + #{$footer-height}));
 
 $content-max-width: 140rem;
