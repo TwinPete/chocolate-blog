@@ -1,0 +1,18 @@
+page.10 = FLUIDTEMPLATE
+page.10 {
+    partialRootPath = EXT:chocolate_blog/Resources/Private/Page/Partials
+    layoutRootPath = EXT:chocolate_blog/Resources/Private/Page/Layouts
+
+    file = EXT:chocolate_blog/Resources/Private/Page/Templates/Main.html
+
+     variables {
+
+      content0 = CONTENT
+      content0 {
+        table = tt_content
+        select.where = colPos = 0
+        orderBy = sorting
+      }
+
+    }
+}

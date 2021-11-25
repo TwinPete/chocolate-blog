@@ -1,18 +1,18 @@
-base: 'http://localhost/chocolate-blog/'
+base: 'http://localhost/chocolate_blog/'
 languages:
   -
     title: Deutsch
     enabled: true
-    languageId: '0'
     base: /
     typo3Language: de
     locale: de_DE.UTF-8
     iso-639-1: de
-    navigationTitle: DE
+    websiteTitle: 'Chocolate Blog'
+    navigationTitle: Deutsch
     hreflang: de-DE
-    direction: ltr
+    direction: ''
     flag: de
-    websiteTitle: ''
+    languageId: 0
   -
     title: English
     enabled: true
@@ -44,4 +44,3 @@ languages:
     languageId: '2'
 rootPageId: 1
 websiteTitle: 'Chocolate Blog'
-

@@ -1,4 +1,7 @@
-.footer {
+@import '../variables.scss';
+
+.cb-footer {
     width: 100%;
+    height: $footer-height;
     background-color: #333;
 }

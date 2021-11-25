@@ -1,0 +1,22 @@
+config {
+    ## HTML5 Settings ##
+  ## Set doctype
+  doctype = html5
+  xmlprologue = none
+
+  ## Removes comments around content elements
+  disablePrefixComment = 1
+
+  contentObjectExceptionHandler = 0
+
+  ## values for default language: German
+  sys_language_uid = 0
+  sys_language_overlay = hideNonTranslated
+  sys_language_mode = content_fallback;0
+
+  language = de
+  locale_all = de_DE.UTF-8
+  htmlTag_langKey = de
+}
+
+settings.overrideFlexformSettingsIfEmpty := addToList(list.paginate.itemsPerPage)

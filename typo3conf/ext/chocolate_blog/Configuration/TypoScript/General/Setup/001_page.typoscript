@@ -1,1 +1,9 @@
 page = PAGE
+
+page.meta {
+  viewport = width=device-width,initial-scale=1
+}
+
+page.includeJSFooter {
+  custom = EXT:chocolate_blog/Resources/Public/JavaScript/main.js
+}

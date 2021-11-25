@@ -35,11 +35,11 @@ img {
     height: auto;
 }
 
-.content {
+.cb-main {
     display: flex;
     flex-direction: column;
     width: 100%;
-    min-height: 50vh;
+    min-height: $content-min-height;
 }
 
 .section {
