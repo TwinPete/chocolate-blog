@@ -92,6 +92,12 @@ return [
         'viewpage' => [
             'packagePath' => 'typo3/sysext/viewpage/',
         ],
+        'chocolate_blog' => [
+            'packagePath' => 'typo3conf/ext/chocolate_blog/',
+        ],
+        'extension_builder' => [
+            'packagePath' => 'typo3conf/ext/extension_builder/',
+        ],
     ],
     'version' => 5,
 ];
