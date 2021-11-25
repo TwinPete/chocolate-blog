@@ -1,0 +1,2 @@
+@import "EXT:chocolate_blog/Configuration/TypoScript/General/Setup/*.typoscript"
+@import "EXT:chocolate_blog/Configuration/TypoScript/General/Modules/*.typoscript"

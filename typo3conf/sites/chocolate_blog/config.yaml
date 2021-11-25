@@ -1,0 +1,47 @@
+base: 'http://localhost/chocolate-blog/'
+languages:
+  -
+    title: Deutsch
+    enabled: true
+    languageId: '0'
+    base: /
+    typo3Language: de
+    locale: de_DE.UTF-8
+    iso-639-1: de
+    navigationTitle: DE
+    hreflang: de-DE
+    direction: ltr
+    flag: de
+    websiteTitle: ''
+  -
+    title: English
+    enabled: true
+    base: /en/
+    typo3Language: default
+    locale: en_US.UTF-8
+    iso-639-1: en
+    websiteTitle: 'Espressionists'
+    navigationTitle: EN
+    hreflang: en-US
+    direction: ''
+    fallbackType: strict
+    fallbacks: ''
+    flag: en-us-gb
+    languageId: '1'
+  -
+    title: Italiano
+    enabled: true
+    base: /it/
+    locale: it_IT.UTF-8
+    iso-639-1: en
+    websiteTitle: 'Espressionists'
+    navigationTitle: IT
+    hreflang: it-IT
+    direction: ''
+    fallbackType: strict
+    fallbacks: ''
+    flag: it
+    languageId: '2'
+rootPageId: 1
+websiteTitle: 'Chocolate Blog'
+
