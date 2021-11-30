@@ -1,0 +1,11 @@
+plugin.tx_news {
+  view {
+    templateRootPaths = EXT:chocolate_blog/Resources/Private/Extensions/News/Templates/
+
+    partialRootPaths = EXT:chocolate_blog/Resources/Private/Extensions/News/Partials/
+    
+
+    layoutRootPaths = EXT:chocolate_blog/Resources/Private/Extensions/News/Layouts/
+    
+  }
+}

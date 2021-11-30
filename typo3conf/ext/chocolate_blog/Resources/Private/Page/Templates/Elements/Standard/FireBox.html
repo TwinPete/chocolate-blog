@@ -1,0 +1,10 @@
+<f:debug>{_all}</f:debug>
+<div class="header_title">
+    {data.header}
+</div>
+<div class="images">
+    <f:for each="{files}" as="image">
+        <f:image image="{image}" />
+        {image.originalFile.name}
+    </f:for>
+</div>

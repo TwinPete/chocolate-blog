@@ -1,0 +1,22 @@
+tt_content {
+    fire_box < lib.contentElement
+    fire_box {
+        templateName = FireBox
+        dataProcessing {
+            10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+            10.references.fieldName = assets
+        }
+    }
+}
+
+lib.fire_box {
+   templateRootPaths {
+      200 = EXT:chocolate_blog/Resources/Private/Page/Templates/Elements
+   }
+   partialRootPaths {
+      200 = EXT:chocolate_blog/Resources/Private/Partials/
+   }
+   layoutRootPaths {
+      200 = EXT:chocolate_blog/Resources/Private/Layouts/
+   }
+}

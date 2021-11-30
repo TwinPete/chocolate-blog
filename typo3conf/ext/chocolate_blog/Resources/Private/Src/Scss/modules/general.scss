@@ -42,6 +42,12 @@ img {
     min-height: $content-min-height;
 }
 
+.news-img-wrap {
+    img {
+        width: 100%;
+    }
+}
+
 .section {
     margin: $margin-regular 0;
     padding: $margin-regular 0;

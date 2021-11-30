@@ -30,6 +30,9 @@
         .grid-group-layout {
             grid-template-columns: 1fr 1fr;
             grid-template-rows: 1fr 1fr;
+            .group-item {
+                overflow: hidden;
+            }
         }
         .grid-group-layout:nth-child(odd)  {
             .grid-item:first-of-type {

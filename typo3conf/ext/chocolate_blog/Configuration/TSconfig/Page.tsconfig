@@ -1,0 +1,64 @@
+
+
+tx_news.templateLayouts {
+                1 = GroupLayout
+                2 = Standard Layout
+                3 = SingleLayout
+                4 = ASpecial
+}
+
+#################### headers #################
+## Ueberschriften/Header
+TCEFORM.tt_content.header_layout {
+  altLabels {
+    0 = Überschrift 1/Heading 1
+    1 =
+    2 = Überschrift 2/Heading 2
+    3 = Überschrift 3/Heading 3
+    4 = Überschrift 4/Heading 4
+    5 = Überschrift 5/Heading 5
+  }
+
+  removeItems = 1
+}
+
+
+
+#################### layout options #################
+## Layout-Feld erweitern
+TCEFORM.tt_content.layout {
+  ## ggf. Eintraege entfernen
+  removeItems = 0,1,2,3
+  addItems {
+    100 = Standard Layout
+    200 = Super Layout
+  }
+}
+
+TCEFORM.tt_content.frame_class {
+  ## ggf. Eintraege entfernen
+  removeItems = default,indent,indent-left,indent-right,none,ruler-before,ruler-after
+  addItems {
+    100 = Standard Frame
+    200 = Super Frame
+  }
+}
+
+
+
+####################################
+#### NEW CONTENT ELEMENT WIZARD ####
+####################################
+
+
+mod.wizards.newContentElement.wizardItems.common {
+    elements {
+        my_extension_my_slider {
+            iconIdentifier = icon-moon
+            title = Fire Box
+            description = A content element to add one or more images
+            tt_content_defValues.CType = fire_box
+        }
+    }
+    show := addToList(fire_box)
+}
